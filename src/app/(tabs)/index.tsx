@@ -6,14 +6,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
   return (
     <SafeAreaView
-      className="flex-1 items-center justify-center bg-background"
-      edges={["top"]}
+      className="flex-1 bg-background"
+      edges={["top", "left", "right"]}
     >
       <Text className="text-xl font-bold text-success">Welcome!</Text>
-      <Link
-        href="/onboarding"
-        className="mt-4 rounded bg-[red] p-4 text-white"
-      >
+      <Link href="/onboarding" className="mt-4 rounded bg-[red] p-4 text-white">
         Go to Onboarding
       </Link>
       <Link
